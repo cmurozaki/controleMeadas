@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light"
+    tools:context=".ActivityEstoque">
+
+    <TextView
+        android:id="@+id/txtMarcasTitulo3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="CONTROLE DO ESTOQUE"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="17dp" />
+
+    <Button
+        android:id="@+id/btnEstoqueSair"
+        android:layout_width="105dp"
+        android:layout_height="45dp"
+        android:layout_gravity="right"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="8dp"
+        android:text="Voltar"
+        android:visibility="visible"
+        app:backgroundTint="@color/design_default_color_error"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearEstoqueMarcas" />
+
+    <LinearLayout
+        android:id="@+id/linearEstoqueMarcas"
+        android:layout_width="332dp"
+        android:layout_height="302dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="210dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecione a marca do produto:"
+            android:textColor="@color/black" />
+
+        <ListView
+            android:id="@+id/lstEstoqueMarcas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="64dp">
+
+        <Button
+            android:id="@+id/btnEstoqueEntradas"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="1"
+            android:text="(+) Entradas"
+            android:textSize="12sp"
+            app:backgroundTint="@android:color/holo_green_dark"
+            app:iconPadding="8dp" />
+
+        <Button
+            android:id="@+id/btnEstoqueSaidas"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:text="(-)        Saídas"
+            android:textSize="12sp"
+            app:backgroundTint="@color/purple_700" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="64dp">
+
+        <Button
+            android:id="@+id/btnEstoqueConsultas"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="1"
+            android:text="Consultas"
+            android:textSize="12sp"
+            app:backgroundTint="@android:color/holo_orange_dark"
+            app:iconPadding="8dp" />
+
+        <Button
+            android:id="@+id/btnEstoqueEstatística"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Estatística"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:textSize="12sp"
+            app:backgroundTint="@android:color/darker_gray" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

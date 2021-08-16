@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuOpcMarcas"
+        android:title="Marcas" />
+    <item
+        android:id="@+id/menuOpcEstoques"
+        android:title="Estoques" />
+    <item
+        android:id="@+id/menuOpcReiniciar"
+        android:title="Reiniciar Tabelas" />
+    <item
+        android:id="@+id/menuBackup"
+        android:title="Backup" />
+    <item
+        android:id="@+id/menuRestaurar"
+        android:title="Restaurar" />
+    <item
+        android:id="@+id/menuSair"
+        android:title="Sair"/>
+</menu>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Controle de Estoque - Meadas</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="texto_botao_estoque">Estoques</string>
+    <string name="texto_botao_marcas">Marcas</string>
+    <string name="texto_tela_principal_1">Controle o seu estoque de meadas</string>
+    <string name="texto_abertura_splash">BORDADOS BeG - Controle de Eestoque de MEADAS - 2021</string>
+    <string name="msg_produto_sem_estoque">Produto não possui estoque suficiente para baixa.</string>
+</resources>
